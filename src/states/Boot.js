@@ -11,7 +11,7 @@ class BootState extends Phaser.State {
   preload() {
     WebFont.load({
       google: {
-        families: ['Bangers']
+        families: ['Bangers', 'Amatic SC']
       },
       active: this.fontsLoaded
     });
