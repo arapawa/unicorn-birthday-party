@@ -66,6 +66,12 @@ class GameState extends Phaser.State {
     this.scoreText.padding.set(32, 32);
     this.scoreText.fixedToCamera = true;
 
+    // Keyboard instructions
+    this.instructionsText = this.game.add.text(18, 68, 'W and A to move, Up or Space to jump', {fontSize: '20px', fill: '#000' });
+    this.instructionsText.font = 'Amatic SC';
+    this.instructionsText.padding.set(32, 32);
+    this.instructionsText.fixedToCamera = true;
+
     // The Camera
     // 0.1 is the amount of linear interpolation to use.
     // The smaller the value, the smooth the camera (and the longer it takes to catch up)
